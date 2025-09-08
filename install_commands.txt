@@ -1,0 +1,15 @@
+pip download flask -d C:\transfer\pypacks\flask --only-binary=:all: --python-version 3.13 --platform win_amd64 --implementation cp --abi cp313
+pip download fiona -d C:\transfer\pypacks\fiona --only-binary=:all: --python-version 3.13 --platform win_amd64 --implementation cp --abi cp313
+pip download shapely -d C:\transfer\pypacks\shapely --only-binary=:all: --python-version 3.13 --platform win_amd64 --implementation cp --abi cp313
+pip download geopandas -d C:\transfer\pypacks\geopandas --only-binary=:all: --python-version 3.13 --platform win_amd64 --implementation cp --abi cp313
+pip download pyodbc -d C:\transfer\pypacks\pyodbc --only-binary=:all: --python-version 3.13 --platform win_amd64 --implementation cp --abi cp313
+
+
+on desination machine - make a folder called "py-packs" and execute:
+
+pip install --no-index --find-links="c:\py-packs\flask" flask
+pip install --no-index --find-links="c:\py-packs\fiona" fiona
+pip install --no-index --find-links="c:\py-packs\shapely" shapely
+pip install --no-index --find-links="c:\py-packs\geopandas" geopandas
+pip install --no-index --find-links="c:\py-packs\pyodbc" pyodbc
+
